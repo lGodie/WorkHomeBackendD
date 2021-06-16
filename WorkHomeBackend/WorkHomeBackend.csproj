@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.7">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\WorkHomeBackend.Common\WorkHomeBackend.Common.csproj" />
+	  <ProjectReference Include="..\WorkHomeBackend.Data\WorkHomeBackend.Data.csproj" />
+	  <ProjectReference Include="..\WorkHomeBackend.IOC\WorkHomeBackend.IOC.csproj" />
+	  <ProjectReference Include="..\WorkHomeBackend.Services\WorkHomeBackend.Services.csproj" />
+	</ItemGroup>
+</Project>
