@@ -59,7 +59,8 @@ namespace WorkHomeBackend.Controllers.v1
             catch (Exception ex)
             {
 
-                return new BadRequestObjectResult(new { success = false, statusCode = 400, message = "Error creando rutina.", error= ex });
+                return StatusCode(400);
+
             }
         }
 
